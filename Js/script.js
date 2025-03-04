@@ -10,7 +10,7 @@ function textAreaValueToArray(word) {
     return word.split(" ");
 }
 function offensiveWord() {
-    let bad = ["bad", "bitch", "stupid", "motherfucker", "dick", "pussy", "cunt", "nonsense", "crazy", "fool", "foolish", "mad", "idiot", "bastard", "idiots", "nincompoop", "scallywag", "mumu", "buffon", "dunce", "oaf", "fuck", "idiotic", "rubbish", "bastards"];
+    let bad = ["bad", "bitch", "stupid", "motherfucker", "dick", "pussy", "cunt", "nonsense", "crazy", "fool", "foolish", "mad", "idiot", "bastard", "idiots", "nincompoop", "scallywag", "mumu", "buffon", "dunce", "oaf", "fuck", "idiotic", "rubbish", "bastards", "ode"];
     return bad
 }
 
@@ -108,17 +108,17 @@ function highlightMatchedWords(searchWord, textArea) {
 
 
 
-function mostCommonWords(word) {
-    let wordArray = textAreaValueToArray(textAreaValueToLowerCase(textAreaValue(word)));
-    let newWords = [...new Set(wordArray)];
-    let topWords = [];
+// function mostCommonWords(word) {
+//     let wordArray = textAreaValueToArray(textAreaValueToLowerCase(textAreaValue(word)));
+//     let newWords = [...new Set(wordArray)];
+//     let topWords = [];
 
-    newWords.forEach(function (element) {
-        let count = 0
-        wordArray.forEach(function (e) {
-            if (element === e) {
-                count++;
-            }
+//     newWords.forEach(function (element) {
+//         let count = 0
+//         wordArray.forEach(function (e) {
+//             if (element === e) {
+//                 count++;
+//             }
         })
         if (element !== "" && !Number(element)) {
             topWords.push([element, count])
