@@ -108,17 +108,17 @@ function highlightMatchedWords(searchWord, textArea) {
 
 
 
-// function mostCommonWords(word) {
-//     let wordArray = textAreaValueToArray(textAreaValueToLowerCase(textAreaValue(word)));
-//     let newWords = [...new Set(wordArray)];
-//     let topWords = [];
+function mostCommonWords(word) {
+    let wordArray = textAreaValueToArray(textAreaValueToLowerCase(textAreaValue(word)));
+    let newWords = [...new Set(wordArray)];
+    let topWords = [];
 
-//     newWords.forEach(function (element) {
-//         let count = 0
-//         wordArray.forEach(function (e) {
-//             if (element === e) {
-//                 count++;
-//             }
+    newWords.forEach(function (element) {
+        let count = 0
+        wordArray.forEach(function (e) {
+            if (element === e) {
+                count++;
+            }
         })
         if (element !== "" && !Number(element)) {
             topWords.push([element, count])
