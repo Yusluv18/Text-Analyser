@@ -25,16 +25,16 @@ function noInputtedWord() {
 
 //BUSINESS-LOGIC//
 
-function wordCounter(word) {
-    let wordCount = 0;
-    let wordArray = textAreaValueToArray(textAreaValue(word));
-    wordArray.forEach(function (element) {
-        if (word !== "" && element !== "" && !Number(element)) {
-            wordCount++;
-        }
-    })
-    return wordCount;
-}
+// function wordCounter(word) {
+//     let wordCount = 0;
+//     let wordArray = textAreaValueToArray(textAreaValue(word));
+//     wordArray.forEach(function (element) {
+//         if (word !== "" && element !== "" && !Number(element)) {
+//             wordCount++;
+//         }
+//     })
+//     return wordCount;
+// }
 
 function offensiveWordCount(text) {
     let curseWords = offensiveWord();
