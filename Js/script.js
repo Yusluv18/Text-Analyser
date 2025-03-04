@@ -10,7 +10,7 @@ function textAreaValueToArray(word) {
     return word.split(" ");
 }
 function offensiveWord() {
-    let bad = ["bad", "bitch", "stupid", "motherfucker", "dick", "pussy", "cunt", "nonsense", "crazy", "fool", "foolish", "mad", "idiot", "bastard", "idiots", "nincompoop", "scallywag", "mumu", "buffon", "dunce", "oaf", "fuck", "idiotic", "rubbish"];
+    let bad = ["bad", "bitch", "stupid", "motherfucker", "dick", "pussy", "cunt", "nonsense", "crazy", "fool", "foolish", "mad", "idiot", "bastard", "idiots", "nincompoop", "scallywag", "mumu", "buffon", "dunce", "oaf", "fuck", "idiotic", "rubbish", "bastards"];
     return bad
 }
 
